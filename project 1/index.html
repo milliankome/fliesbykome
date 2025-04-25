@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flies by Kome - Tied and True</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <nav class="sidebar">
+            <h2>Flies by Kome</h2>
+            <p class="slogan">Tied and True</p>
+            <ul>
+                <li><a href="#home" onclick="showPage('home')">Home</a></li>
+                <li><a href="#about" onclick="showPage('about')">About</a></li>
+                <li><a href="#flies" onclick="showPage('flies')">Flies</a></li>
+                <li><a href="#materials" onclick="showPage('materials')">Materials</a></li>
+                <li><a href="#orders" onclick="showPage('orders')">Orders</a></li>
+                <li><a href="#contact" onclick="showPage('contact')">Contact Us</a></li>
+            </ul>
+        </nav>
+        <div class="content">
+            <section id="home" class="page active">
+                <h1>Welcome to Flies by Kome</h1>
+                <p>Your one-stop destination for premium fishing flies and materials by sir Kometz.</p>
+            </section>
+
+            <section id="about" class="page">
+                <h1>About Us</h1>
+                <p>We specialize in handcrafted fishing flies, ensuring quality and precision for every angler.</p>
+            </section>
+
+            <section id="flies" class="page">
+                <h1>Flies</h1>
+                <div class="category" onclick="showSubCategory('flies', 'dryFlies')">
+                    <h2>Dry Flies</h2>
+                    <p>Perfect for surface water fishing.</p>
+                </div>
+                <div id="dryFlies" class="subcategory">
+                    <img src="https://www.gettyimages.com/photos/dry-fly-fishing" alt="Dry Fly">
+                    <p>Details about dry flies...</p>
+                </div>
+            </section>
+
+            <section id="materials" class="page">
+                <h1>Materials</h1>
+                <div class="category" onclick="showSubCategory('materials', 'hooks')">
+                    <h2>Hooks</h2>
+                    <p>Durable hooks for all types of flies.</p>
+                </div>
+                <div id="hooks" class="subcategory">
+                    <img src="https://pixabay.com/images/search/fishing-hook/" alt="Hooks">
+                    <p>Details about hooks...</p>
+                </div>
+            </section>
+
+            <section id="orders" class="page">
+                <h1>Place Your Order</h1>
+                <p>Contact us to order your custom fishing flies or materials.</p>
+            </section>
+
+            <section id="contact" class="page">
+                <h1>Contact Us</h1>
+                <p>Reach out to us at contact@fliesbykome.com or call us at +123-456-7890.</p>
+            </section>
+        </div>
+    </div>
+	<script src="apps.js"></script>
+</body>
+</html>
